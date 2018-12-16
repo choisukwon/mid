@@ -30,7 +30,7 @@ int main(void) {
 			/* 파이프에서 데이터 읽기*/
 			read(pfd[0], buf, 5);
 			printf("PARENT(PID: %d): %s\n",getpid(), buf);
-			
+			//12334
 			wait(NULL);
 		}
 
