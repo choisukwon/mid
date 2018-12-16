@@ -31,7 +31,6 @@ int main(void) {
 			read(pfd[0], buf, 5);
 			printf("PARENT(PID: %d): %s\n",getpid(), buf);
 			
-			/* 자식 프로세스의 종료를 기다리기 */
 			wait(NULL);
 		}
 
